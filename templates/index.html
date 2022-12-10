@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Загрузка CSV</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="templates/css/style.css" type="text/css"/>
+</head>
+<body>
+<h3>Загрузите csv-файл, нажав на кнопку ниже</h3>
+    <div class="example-1">
+        <div class="form-group">
+            <label class="label">
+                <i class="material-icons">attach_file</i>
+                <span class="title">Прикрепить CSV-файл</span>
+                <form class="send-csv-form" id="csvForm" method="post" enctype="multipart/form-data" action="/viewFile">
+                    <input type="file" accept=".csv" id="fileInput" name="csvFile">
+                    <input id="hiddenSubmit" type="submit" style="display: none;">
+                </form>
+            </label>
+        </div>
+    </div>
+    <script src="templates/js/sendForm.js" type="application/javascript"></script>
+</body>
+</html>
